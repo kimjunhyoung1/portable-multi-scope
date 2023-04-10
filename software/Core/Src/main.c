@@ -355,8 +355,7 @@ LL_mDelay(10);
               LL_DMA_DisableChannel(DMA1, LL_DMA_CHANNEL_1);                  //disable DMA so that it can be
               LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_1, buffersize);         //set to the number of transfers
               LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_1);                  //re-enable DMA
-
-              LL_TIM_EnableCounter(TIM3);
+		LL_TIM_EnableCounter(TIM3);
      }
 
 
